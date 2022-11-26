@@ -1,0 +1,26 @@
+{
+  "name": "social-network-db",
+  "version": "1.0.0",
+  "description": "A MongoDB database for a social network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awoelf/social-network-db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awoelf/social-network-db/issues"
+  },
+  "homepage": "https://github.com/awoelf/social-network-db#readme",
+  "dependencies": {
+    "dayjs": "^1.11.6",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.3",
+    "nodemon": "^2.0.20"
+  }
+}
