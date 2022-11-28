@@ -13,7 +13,12 @@ const userSchema = new Schema(
             type: String,
             unique: true,
             required: true,
-            validate: [validator.isEmail, 'Invalid email']
+            validate: {
+                validator: function (email) {
+                    return validator.isEmail(email);
+                },
+                message: props => `${props.value} is not a valid email.`
+            }
         },
         thoughts: [{
             type: Schema.Types.ObjectId,
@@ -27,7 +32,8 @@ const userSchema = new Schema(
     {
         toJSON: {
             virtual: true
-        }
+        },
+        id: false,
     }
 )
 
