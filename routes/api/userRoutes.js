@@ -1,11 +1,11 @@
 const {
-  getUsers,
-  getUserById,
-  newUser,
-  deleteUser,
-  updateUser,
-  addFriend,
-  deleteFriend
+	getUsers,
+	getUserById,
+	newUser,
+	deleteUser,
+	updateUser,
+	addFriend,
+	deleteFriend
 } = require('../../controllers/userController');
 
 const router = require('express').Router();
