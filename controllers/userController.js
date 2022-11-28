@@ -1,26 +1,6 @@
 const { ObjectId } = require('mongoose').Types;
 const { User, Thought } = require('../models');
 
-// Aggregate funciton for thoughts
-const getThoughts = async (userId) =>
-  Thought.aggregate([
-    { $match: { _id: ObjectId(userId) } },
-    {
-      $unwind: '$thought',
-    },
-    {
-      $group: {
-        _id: ObjectId(userId),
-        // thoughts: { '$thought' }
-      },
-    },
-  ]);
-
-// // Aggregate function for friends
-// const getFriends = async (userId) => {
-
-// }
-
 // GET all users
 const getUsers = async (req, res) => {
   try {
@@ -62,6 +42,7 @@ const newUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   try {
     const userData = await User.findOneAndRemove({ _id: req.params.userId });
+    userData.remove();
     if (!userData) {
       res.status(404).json({ message: 'No user with that id.' });
     } else {
