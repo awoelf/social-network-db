@@ -1,11 +1,13 @@
 const connection = require('../config/connection');
-const User = require('../models/User')
+const User = require('../models/User');
+const Thought = require('../models/Thought');
 const { emails, usernames } = require('./data');
 
 console.time('seeding');
 
 connection.once('open', async () => {
     await User.deleteMany({});
+    await Thought.deleteMany({});
 
     const users = [];
 
