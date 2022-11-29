@@ -3,7 +3,7 @@
 
 # Social Network Database
 
-![screen-gif](/assets/my-tech-site.gif)
+![screen-gif](/assets/social-media-back-end.gif)
 
 ## About the Project
 
