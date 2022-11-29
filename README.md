@@ -7,13 +7,13 @@
 
 ## About the Project
 
-This is a database for a social network that uses MongoDB and express. The Social Network Database keeps track of users, their thoughts (posts), and other users' reactions.
+The Social Network Database keeps track of users, their thoughts (posts), and other users' reactions using MongoDB.
 
 ### Features
 
 * View, create, update, and delete data.
 * Add and delete user friends
-* Keep track of the number of thoughts a user creates
+* Keep track of the number of thoughts and reactions a user creates
 
 ### Built With
 * [Express](https://www.npmjs.com/package/express)
@@ -23,21 +23,15 @@ This is a database for a social network that uses MongoDB and express. The Socia
 
 ## Geting Started
 
-1. Visit the website at this [link](https://awoelf-my-tech-site.herokuapp.com/).
-2. In the upper right hand corner, click on the `Log in` link.
-3. Enter a username that is at least 3 characters long and a password that is at least 8 characters long, then click `Sign up`.
-4. If you already have an account, enter your account credentials and click `Log in`
-5. Once you are logged in, you will be directed to the dashboard where you will see all of your posts and a box that allows you to create a new post.
-6. Enter a title and content for the post, then click `Create Post`. A new post will be created.
-7. Click on the `Homepage` link in the upper right hand corner to view all posts on the website.
-8. Click on a post's title to view and make comments.
-10. On the dashboard page, when you click on your own post title, you will be directed to a post page that will allow you to make edits or delete the post.
-11. Enter the new title and content of the post and click `Edit Post`, or simply delete the post by clicking `Delete Post`.
-12. When you are done using the site, click the `Log out` link, located in the top right corner.
+1. Open MongoDBCompass and create a new database called social_network_db.
+2. Download the repository and extract the contents in a new folder.
+3. In a terminal, start the database with `node index`. If you would like to work with seeded users, enter `node utils/seed` first.
+4. If you are using Insomnia, you can use a pre-made request environment by importing the `Insomnia.json` file located in `/assets`.
+5. Watch [this video]() or view the `/docs` to start making requests.
 
 ### Prerequisite
 
-Have a stable internet connection and a modern internet browser.
+Install MongoDB, MongoDBCompass, npm, Insomnia, and NodeJS on your device.
 
 ## License
 
